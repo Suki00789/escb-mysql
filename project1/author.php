@@ -25,28 +25,59 @@ $result = $conn->query($sql);
 
   </head>
   <body>
-    <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Biography</th>
-      </tr>
-    </thead>
-    <tbody>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Library</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="home.php">Home</a></li>
+            <li class="active"><a href="#">Author</a></li>
+            <li><a href="category.php">Category</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  New <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="newcategory.php">Category</a></li>
+                <li><a href="#">Another action</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  <div class="container">
+    <h1>Authors</h1>
+    <p class="lead">We have <?php echo ($result->num_rows ? $result->num_rows : 0); ?> Authors in our list.</p>
+    
+    <?php if($result->num_rows > 0): ?>
       
-<?php while ( $row = $result->fetch_assoc() ) { ?>
+      <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th width="30%">Name</th>
+                <th>Bio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php 
+          while ( $row = $result->fetch_assoc() ) {
+            // echo $i . ". " . $row['name'] . "(" . $row['id'] . ")<br>";
+            echo "<tr><td>".$row['id']."</td><td>".$row['name']."</td><td>".$row['bio']."</td></tr>";
+          }
+               ?>
+              
+            </tbody>
+          </table>
 
-      <tr>
-        <td><?php echo $row["id"] ?></td>
-        <td><?php echo $row["name"] ?></td>
-        <td><?php echo $row["biography"] ?></td>
-      </tr>
-
-
-<?php } ?>
-    </tbody>
-  </table>
+    <?php endif; ?>
 
 
   </div><!-- /.container -->

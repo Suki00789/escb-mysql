@@ -1,26 +1,32 @@
-    <?php  
-if (isset($_POST)){
-
-	$name = $_POST['name'];
-	$description = $_POST['description'];
-}
-
+<?php
+if(isset($_POST)){
+  $name = $_POST['name'];
+  $description = $_POST['description'];
+} 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>form</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Library Project</title>
+    
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-<div class="container">
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
@@ -28,42 +34,50 @@ if (isset($_POST)){
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Library</a>
+          <a class="navbar-brand" href="index.html">Library</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="table.html">Author</a></li>
-            <li><a href="form.html">Category</a></li>
-            <li><a href="form.html">New</a></li>
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="home.php">Home</a></li>
+            <li><a href="author.php">Author</a></li>
+            <li><a href="category.php">Category</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  New <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="newcategory.php">Category</a></li>
+                <li><a href="#">Another action</a></li>
+              </ul>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+  <div class="container">
+    <h1>New category</h1>
+    <?php if(isset($name)): ?>
+      <p>Your category info is: </p>
+      <ul>
+        <li>Name : <strong><?php echo $name; ?></strong></li>
+        <li>Description : <strong><?php echo $description; ?></strong></li>
+      </ul>
+    <?php endif; ?> 
+    <form role="form" method="post" style="width: 500px;">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required="" />
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea id="description" class="form-control" rows="3" name="description"></textarea>
+        </div>
 
-    <div class="container">
-    
-  <h2>New Category</h2>
-  <?php if (isset($name)): 
-  	<p>Your category</p>
-  	<ul>
-  		<li>Name:Novel</li>
-  		<li>Description:it's a novel</li>
-  	</ul>
-  	?>
-  <form role="form" method="get">
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input type="text" class="form-control" id="name" name="name" required="true">
-    </div>
-    <div class="form-group">
-      <label for="txtarea">Description:</label>
-      <textarea class="form-control" rows="3" name="description"></textarea>
-    </div>
-    
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-</div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
 
-</body>
+  </div><!-- /.container -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
 </html>

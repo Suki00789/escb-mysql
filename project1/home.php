@@ -35,6 +35,13 @@
             <li class="active"><a href="#">Home</a></li>
             <li><a href="author.php">Author</a></li>
             <li><a href="category.php">Category</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  New <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="newcategory.php">Category</a></li>
+                <li><a href="#">Another action</a></li>
+              </ul>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -44,5 +51,9 @@
 
 
   </div><!-- /.container -->
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
