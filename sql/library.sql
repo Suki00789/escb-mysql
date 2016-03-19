@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 15, 2016 at 03:05 PM
+-- Generation Time: Mar 19, 2016 at 03:30 PM
 -- Server version: 5.6.28
 -- PHP Version: 5.5.31
 
@@ -37,11 +37,11 @@ CREATE TABLE IF NOT EXISTS `author` (
 --
 
 INSERT INTO `author` (`id`, `name`, `biography`) VALUES
-(1, 'হুমায়ূন আহমেদ', 'বিংশ শতাব্দীর বাঙালি জনপ্রিয় কথাসাহিত্যিকদের মধ্যে অন্যতম। তাঁকে বাংলাদেশের স্বাধীনতা পরবর্তী শ্রেষ্ঠ লেখক গণ্য করা হয়। তিনি একাধারে ঔপন্যাসিক, ছোটগল্পকার, নাট্যকার এবং গীতিকার। বলা হয় আধুনিক বাংলা কল্পবিজ্ঞান সাহিত্যের তিনি পথিকৃৎ। নাটক ও চলচ্চিত্র পর'),
-(2, 'মুহম্মদ জাফর ইকবাল', 'মুহম্মদ জাফর ইকবাল (জন্মঃ ২৩ ডিসেম্বর ১৯৫২) হলেন একজন বাংলাদেশী লেখক, পদার্থবিদ ও শিক্ষাবিদ। তাকে বাংলাদেশে বৈজ্ঞানিক কল্পকাহিনী লেখা ও জনপ্রিয়করণের পথিকৃত হিসাবে গণ্য করা হয়। এছাড়াও তিনি একজন জনপ্রিয় শিশুসাহিত্যিক এবং কলাম-লেখক। তার লেখা বেশ কয়েকটি '),
-(3, 'রবীন্দ্রনাথ ঠাকুর', 'রবীন্দ্রনাথ ঠাকুর (৭ই মে, ১৮৬১ - ৭ই আগস্ট, ১৯৪১)[১] (২৫ বৈশাখ, ১২৬৮ - ২২ শ্রাবণ, ১৩৪৮ বঙ্গাব্দ)[১] ছিলেন অগ্রণী বাঙালি কবি, ঔপন্যাসিক, সংগীতস্রষ্টা, নাট্যকার, চিত্রকর, ছোটগল্পকার, প্রাবন্ধিক, অভিনেতা, কণ্ঠশিল্পী ও দার্শনিক।[২] তাঁকে বাংলা ভাষার সর্বশ্রেষ্'),
-(4, 'কাজী নজরুল ইসলাম', 'কাজী নজরুল ইসলাম (উচ্চারণ: [Kaʒi Naʒrul Islam], মে ২৫, ১৮৯৯–আগস্ট ২৯, ১৯৭৬) (জ্যৈষ্ঠ ১১, ১৩০৬–ভাদ্র ১২, ১৩৮৩ বঙ্গাব্দ) ছিলেন বিংশ শতাব্দীর অন্যতম জনপ্রিয় অগ্রণী বাঙালি কবি, উপন্যাসিক, নাট্যকার, সঙ্গীতজ্ঞ ও দার্শনিক যিনি বাংলা কাব্যে অগ্রগামী ভূমিকা রাখার'),
-(5, 'আনিসুল হক', 'আনিসুল হক (জন্ম: মার্চ ৪, ১৯৬৫) একজন বাংলাদেশী কবি, লেখক, নাট্যকার ও সাংবাদিক। বর্তমানে তিনি বাংলাদেশের দৈনিক প্রথম আলোর সহযোগী সম্পাদক এবং কিশোর আলোর সম্পাদক পদে কর্মরত আছেন। মুক্তিযুদ্ধকালীন সময়ের সত্য ঘটনা নিয়ে তাঁর লেখা মা বইটি বেশ জনপ্রিয়।[১] বাংল');
+(1, 'Humayun Ahmed', 'Humayun Ahmed (13 November 1948 – 19 July 2012) was a Bangladeshi writer, dramatist, screenwriter and filmmaker. Ahmed got his break-through by his debut novel Nondito Noroke in 1972. He wrote over 200 fiction and non-fiction books, all of which were bestsellers in Bangladesh. Ahmed''s writing style is characterized as magic realism. Ahmed''s books were the top sellers at the Ekushey Book Fair during the 1990s and 2000s. He won Bangla Academy Award and Ekushey Padak for his contribution to Bengali literature.'),
+(2, 'Mohammed Zafar Iqbal\r\n', 'Muhammed Zafar Iqbal (born 23 December 1952) is a Bangladeshi author of science fiction and children''s literature. He is a professor of computer science and engineering and also head of the department of electrical and electronics engineering at Shahjalal University of Science and Technology.'),
+(3, 'Rabindronath Tagore', '(7 May 1861 – 7 August 1941), was a Bengali polymath who reshaped Bengali literature and music, as well as Indian art with Contextual Modernism in the late 19th and early 20th centuries. Author of Gitanjali and its "profoundly sensitive, fresh and beautiful verse", he became the first non-European to win the Nobel Prize in Literature in 1913'),
+(4, 'Kazi Nazrul Islam', 'Popularly known as Nazrul, he produced a large body of poetry and music that used themes of Islamic renaissance and marked the beginning of spiritual rebellion against fascism and oppression. Nazrul''s activism for political and social justice earned him the title of the "Rebel Poet".'),
+(5, 'Anisul Haque', 'Anisul Hoque (born March 4, 1965) is a Bangladeshi screenwriter, novelist, dramatist and journalist.');
 
 -- --------------------------------------------------------
 
@@ -75,11 +75,11 @@ CREATE TABLE IF NOT EXISTS `category` (
 --
 
 INSERT INTO `category` (`id`, `name`, `description`) VALUES
-(1, 'Novel', 'গদ্যে লেখা দীর্ঘাবয়ব বর্ণনাত্মক কথাসাহিত্য। কবিতা, নাটক ও ছোটগল্পের ন্যায় উপন্যাস সাহিত্যের একটি বিশেষ শাখা। আধুনিক সাহিত্যে এটি তুলনামূলকভাবে নতুন আঙ্গিক। যিনি উপন্যাস রচনা করেন তিনি ঔপন্যাসিক।'),
-(2, 'Science fiction', 'বিজ্ঞান কল্পকাহিনী আধুনিক কল্পকাহিনীমূলক সাহিত্যের একটি বিশেষ ধারা, যাতে ভবিষ্যৎ বৈজ্ঞানিক বা প্রযুক্তিগত আবিষ্কার ও উদ্ভাবন এবং মানব সভ্যতাকে কেন্দ্র করে পটভূমি রচনা করা হয়। মানব সভ্যতা মধ্যযুগে থেকে আধুনিক যুগে প্রবেশের সময় যে বৈজ্ঞানিক বিপ্লবের সৃষ্টি হয় তার অনিবার্য ফসল ছিল বৈজ্ঞানিক কল্পকাহিনী। ইংরেজিতে একে “সাইন্স ফিকশন” বলা হয়। বাংলা ভাষায় প্রথম বৈজ্ঞানিক কল্পকাহিনী লেখা শুরু হয় উনবিংশ শতাব্দীতে।'),
-(3, 'short story', 'কথাসাহিত্যের একটি বিশেষ রূপবন্ধ যা কাহিনীভিত্তিক এবং দৈর্ঘ্যে হ্রস্ব, তবে ছোটগল্পের আকার কী হবে সে সম্পর্কে কোন সর্বসম্মত সিদ্ধান্ত নেই। সব ছোটগল্পই গল্প বটে কিন্তু সব গল্পই ছোটগল্প নয়। একটি কাহিনী বা গল্পকে ছোটগল্পে উত্তীর্ণ হওয়ার জন্য কিছু নান্দনিক ও শিল্পশর্ত পূরণ করতে হয়। ছোটগল্পের সংজ্ঞার্থ কী সে নিয়ে সাহিত্যিক বিতর্ক ব্যাপক। এককথায় বলা যায়- যা আকারে ছোট, প্রকারে গল্প তাকে ছোটগল্প বলে। '),
-(4, 'Poetry', 'শিল্পের একটি শাখা যেখানে ভাষার নান্দনিক গুণাবলীর ব্যবহারের পাশাপাশি ধারণাগত এবং শব্দার্থিক বিষয়বস্তু ব্যবহার করা হয়।'),
-(5, 'War novel', 'বাংলা ভাষা ও বাংলা সাহিত্যের প্রকাশনায় একটি বড় প্রভাব বিস্তার করেছে।বাংলাদেশের স্বাধীনতা যুদ্ধ ও স্বাধীনতা-পূর্ব আন্দোলনসমূহ। বিভিন্ন গল্প-উপন্যাস, প্রতিবেদনে স্বাধীনতা-পূর্ব ও যুদ্ধকালীন বাংলাদেশ, যুদ্ধাবস্থায় শরণার্থী, যুদ্ধে বিদেশী ও প্রবাসী বাংলাদেশীদের সহায়তা, কর্মকাণ্ড প্রভৃতি বিধৃত হয়েছে। সে সংক্রান্ত প্রকাশিত বইগুলোর একটি তালিকা এখানে বিধৃত হলো।');
+(1, 'Novel', 'A novel is a long narrative, normally in prose, which describes fictional characters and events, usually in the form of a sequential story.'),
+(2, 'Science fiction', 'Science fiction is a genre of speculative fiction dealing with imaginative concepts such as futuristic settings, futuristic science and technology, space travel, time travel, faster than light travel, parallel universes and extraterrestrial life. '),
+(3, 'short story', 'A short story is a piece of prose fiction, which can be read in a single sitting. Emerging from earlier oral storytelling traditions in the 17th century, the short story has grown to encompass a body of work so diverse as to defy easy characterization.'),
+(4, 'Poetry', 'Poetry is a form of literature that uses aesthetic and rhythmic[1][2][3] qualities of language—such as phonaesthetics, sound symbolism, and metre—to evoke meanings in addition to, or in place of, the prosaic ostensible meaning.'),
+(5, 'War novel', 'A war novel (military fiction) is a novel in which the primary action takes place on a battlefield, or in a civilian setting (or home front), where the characters are either preoccupied with the preparations for, suffering the effects of, or recovering from war. Many war novels are historical novels.');
 
 --
 -- Indexes for dumped tables
