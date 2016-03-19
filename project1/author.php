@@ -63,14 +63,14 @@ $result = $conn->query($sql);
               <tr>
                 <th>ID</th>
                 <th width="30%">Name</th>
-                <th>Bio</th>
+                <th>Biography</th>
               </tr>
             </thead>
             <tbody>
               <?php 
           while ( $row = $result->fetch_assoc() ) {
             // echo $i . ". " . $row['name'] . "(" . $row['id'] . ")<br>";
-            echo "<tr><td>".$row['id']."</td><td>".$row['name']."</td><td>".$row['bio']."</td></tr>";
+            echo "<tr><td>".$row['id']."</td><td>".$row['name']."</td><td>".$row['biography']."</td></tr>";
           }
                ?>
               
@@ -81,5 +81,9 @@ $result = $conn->query($sql);
 
 
   </div><!-- /.container -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
