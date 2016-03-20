@@ -1,10 +1,27 @@
-<?php 
+<?php
 include "conn.php"; 
-$sql = "SELECT * FROM `category`";
-$result = $conn->query($sql);
-// echo $result->num_rows;die;
-?>
+$sql = "SELECT * FROM `author`";
+$author = $conn->query($sql);
 
+
+$sql = "SELECT * FROM `category`";
+$category = $conn->query($sql);
+
+
+
+$msg = '';
+if(isset($_POST)){
+  include "conn.php"; 
+
+  $author_id = $_POST['author_id'];
+  $cat_id = $_POST['cat_id'];
+  $name = $_POST['name'];
+  $introduction = $_POST['introduction'];
+  $description = $_POST['description'];
+
+  
+} 
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,7 +58,7 @@ $result = $conn->query($sql);
           <ul class="nav navbar-nav pull-right">
             <li><a href="home.php">Home</a></li>
             <li><a href="author.php">Author</a></li>
-            <li class="active"><a href="#">Category</a></li>
+            <li><a href="category.php">Category</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  New <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -55,36 +72,56 @@ $result = $conn->query($sql);
       </div>
     </nav>
   <div class="container">
-    <h1>Category</h1>
-    <p class="lead">We have <?php echo ($result->num_rows ? $result->num_rows : 0); ?> Categories in our library.</p>
-    
-    <?php if($result->num_rows > 0): ?>
-      
-      <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th width="30%">Name</th>
-                <th>Desc</th>
-              </tr>
-            </thead>
-            <tbody>
+    <h1>New Book</h1>
+
+
+   
+              
+              
+            
+
+    <form role="form" method="post" style="width: 500px;">
+        <div class="form-group">
+          <label for="nam">Author id:</label>
+            <select class="form-control" name="author_id">
               <?php 
-          while ( $row = $result->fetch_assoc() ) {
+          while ( $row = $author->fetch_assoc() ) {
             // echo $i . ". " . $row['name'] . "(" . $row['id'] . ")<br>";
-            echo "<tr><td>".$row['id']."</td><td>".$row['name']."</td><td>".$row['description']."</td></tr>";
+            echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
           }
                ?>
-              
-            </tbody>
-          </table>
+        </select>        
+        </div>
+        <div class="form-group">
+          <label for="nam">Category id:</label>
+           <select class="form-control" name="cat_id">
+             <?php 
+          while ( $row = $category->fetch_assoc() ) {
+            // echo $i . ". " . $row['name'] . "(" . $row['id'] . ")<br>";
+            echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
+          }
+               ?>
+        </select>
+        </div>
+        <div class="form-group">
+          <label for="biography">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required="" />
+        </div>
+        <div class="form-group">
+          <label for="biography">Introduction:</label>
+          <textarea id="biography" class="form-control" rows="3" name="introduction"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="biography">Description:</label>
+          <textarea id="biography" class="form-control" rows="3" name="description"></textarea>
+        </div>
 
-    <?php endif; ?>
-
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
 
   </div><!-- /.container -->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
   </body>

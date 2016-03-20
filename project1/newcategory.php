@@ -1,7 +1,20 @@
 <?php
+$msg = '';
 if(isset($_POST)){
+  include "conn.php"; 
+
   $name = $_POST['name'];
   $description = $_POST['description'];
+
+  if(!empty($name)){
+    $sql = "INSERT INTO `category`(`name`,`description`) VALUES ('".$name."', '".$description."')";
+
+    if($conn->query($sql)===TRUE){
+      $msg= "new category successfully received";
+    }else{
+      $msg= "Error: " . $conn->error;
+    }
+  }
 } 
 ?>
 <!DOCTYPE html>
@@ -45,7 +58,8 @@ if(isset($_POST)){
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  New <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="newcategory.php">Category</a></li>
-                <li><a href="#">Another action</a></li>
+                <li><a href="newauthor.php">Author</a></li>
+                <li><a href="newbook.php">Book</a></li>
               </ul>
             </li>
           </ul>
@@ -54,6 +68,16 @@ if(isset($_POST)){
     </nav>
   <div class="container">
     <h1>New category</h1>
+
+
+    <?php if (!empty($msg)) { ?>
+
+      <div class="alert alert-info">
+        <?php echo "$msg"; ?>
+      </div>
+    <?php  }; ?>
+
+
     <?php if(isset($name)): ?>
       <p>Your category info is: </p>
       <ul>

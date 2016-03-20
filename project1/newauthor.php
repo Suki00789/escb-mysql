@@ -1,10 +1,22 @@
-<?php 
-include "conn.php"; 
-$sql = "SELECT * FROM `category`";
-$result = $conn->query($sql);
-// echo $result->num_rows;die;
-?>
+<?php
+$msg = '';
+if(isset($_POST)){
+  include "conn.php"; 
 
+  $name = $_POST['name'];
+  $biography = $_POST['biography'];
+
+  if(!empty($name)){
+    $sql = "INSERT INTO `author`(`name`,`biography`) VALUES ('".$name."', '".$biography."')";
+
+    if($conn->query($sql)===TRUE){
+      $msg= "new author successfully received";
+    }else{
+      $msg= "Error: " . $conn->error;
+    }
+  }
+} 
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -41,7 +53,7 @@ $result = $conn->query($sql);
           <ul class="nav navbar-nav pull-right">
             <li><a href="home.php">Home</a></li>
             <li><a href="author.php">Author</a></li>
-            <li class="active"><a href="#">Category</a></li>
+            <li><a href="category.php">Category</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  New <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -55,36 +67,40 @@ $result = $conn->query($sql);
       </div>
     </nav>
   <div class="container">
-    <h1>Category</h1>
-    <p class="lead">We have <?php echo ($result->num_rows ? $result->num_rows : 0); ?> Categories in our library.</p>
-    
-    <?php if($result->num_rows > 0): ?>
-      
-      <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th width="30%">Name</th>
-                <th>Desc</th>
-              </tr>
-            </thead>
-            <tbody>
-              <?php 
-          while ( $row = $result->fetch_assoc() ) {
-            // echo $i . ". " . $row['name'] . "(" . $row['id'] . ")<br>";
-            echo "<tr><td>".$row['id']."</td><td>".$row['name']."</td><td>".$row['description']."</td></tr>";
-          }
-               ?>
-              
-            </tbody>
-          </table>
+    <h1>New author</h1>
 
-    <?php endif; ?>
 
+    <?php if (!empty($msg)) { ?>
+
+      <div class="alert alert-info">
+        <?php echo "$msg"; ?>
+      </div>
+    <?php  }; ?>
+
+
+    <?php if(isset($name)): ?>
+      <p>Your author info is: </p>
+      <ul>
+        <li>Name : <strong><?php echo $name; ?></strong></li>
+        <li>Biography : <strong><?php echo $biography; ?></strong></li>
+      </ul>
+    <?php endif; ?> 
+    <form role="form" method="post" style="width: 500px;">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name" name="name" required="" />
+        </div>
+        <div class="form-group">
+          <label for="biography">Biography:</label>
+          <textarea id="biography" class="form-control" rows="3" name="biography"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
 
   </div><!-- /.container -->
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
   </body>

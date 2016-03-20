@@ -39,7 +39,8 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  New <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="newcategory.php">Category</a></li>
-                <li><a href="#">Another action</a></li>
+                <li><a href="newauthor.php">Author</a></li>
+                <li><a href="newbook.php">Book</a></li>
               </ul>
             </li>
           </ul>
