@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 20, 2016 at 03:05 PM
+-- Generation Time: Mar 21, 2016 at 07:28 PM
 -- Server version: 5.6.28
 -- PHP Version: 5.5.31
 
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS `author` (
   `id` int(10) NOT NULL,
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `biography` longtext COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `author`
@@ -45,7 +45,8 @@ INSERT INTO `author` (`id`, `name`, `biography`) VALUES
 (6, 'Imdadul haque', ''),
 (7, 'xyz', ''),
 (8, 'aer', ''),
-(9, 'qwe', 'asdfghhjk');
+(9, 'qwe', 'asdfghhjk'),
+(10, 'Samsul Haque', 'He is poet.');
 
 -- --------------------------------------------------------
 
@@ -60,7 +61,15 @@ CREATE TABLE IF NOT EXISTS `books` (
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `introduction` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `description` longtext COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `books`
+--
+
+INSERT INTO `books` (`id`, `author_id`, `cat_id`, `name`, `introduction`, `description`) VALUES
+(1, 1, 1, 'Deyal', 'Deyal is a historical novel written by Humayun Ahmed.', 'The novel named Deyal written by Humayun Ahmed shows the history of losing the father of this nation and how the nation lost him.'),
+(2, 2, 2, 'Crenial', 'It''s about fiction of science.', 'It''ll know us that our brain is our main resources. ');
 
 -- --------------------------------------------------------
 
@@ -116,12 +125,12 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT for table `author`
 --
 ALTER TABLE `author`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` mediumint(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` mediumint(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `category`
 --
