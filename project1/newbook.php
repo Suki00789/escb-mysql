@@ -18,6 +18,17 @@
     $name = $_POST['name'];
     $introduction = $_POST['introduction'];
     $description = $_POST['description'];
+
+
+      if(!empty($name)){
+      $sql = "INSERT INTO `book`(`author_id`,`cat_id`,`name`,`introduction`,`description`) VALUES ('".$author_id."','".$cat_id."','".$name."','".$introduction."','".$description."')";
+
+      if($conn->query($sql)===TRUE){
+        $msg= "new book name successfully received";
+      }else{
+        $msg= "Error: " . $conn->error;
+      }
+    }
   } 
 ?>
 
@@ -75,60 +86,62 @@
   <div class="container">
     <h1>New Book</h1>
 
-    <?php if (!empty($msg)) { ?>
+      <?php if (!empty($msg)) { ?>
 
-      <div class="alert alert-info">
-        <?php echo "$msg"; ?>
-      </div>
-    <?php  }; ?>
+        <div class="alert alert-info">
+          <?php echo "$msg"; ?>
+        </div>
+      <?php  }; ?>
 
 
-    <?php if(isset($name)): ?>
-      <p>Your book info is: </p>
-      <ul>
-        <li>Author ID : <strong><?php echo $author_id; ?></strong></li>
-        <li>Category ID : <strong><?php echo $cat_id; ?></strong></li>
-        <li>Name : <strong><?php echo $name; ?></strong></li>
-        <li>Introduction : <strong><?php echo $introduction; ?></strong></li>
-        <li>Description : <strong><?php echo $description; ?></strong></li>
-      </ul>
-    <?php endif; ?>
+      <?php if(isset($name)): ?>
+        <p>Your book info is: </p>
+        <ul>
+          <li>Author ID : <strong><?php echo $author_id; ?></strong></li>
+          <li>Category ID : <strong><?php echo $cat_id; ?></strong></li>
+          <li>Name : <strong><?php echo $name; ?></strong></li>
+          <li>Introduction : <strong><?php echo $introduction; ?></strong></li>
+          <li>Description : <strong><?php echo $description; ?></strong></li>
+        </ul>
+      <?php endif; ?>
    
-              
-              
-            
+  
 
     <form role="form" method="post" style="width: 500px;">
         <div class="form-group">
           <label for="nam">Author id:</label>
             <select class="form-control" name="author_id">
-              <?php 
-          while ( $row = $author->fetch_assoc() ) {
-            // echo $i . ". " . $row['name'] . "(" . $row['id'] . ")<br>";
-            echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
-          }
-               ?>
-        </select>        
+                <?php 
+            while ( $row = $author->fetch_assoc() ) {
+              // echo $i . ". " . $row['name'] . "(" . $row['id'] . ")<br>";
+              echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
+            }
+                 ?>
+            </select>        
         </div>
+
         <div class="form-group">
           <label for="nam">Category id:</label>
            <select class="form-control" name="cat_id">
-             <?php 
-          while ( $row = $category->fetch_assoc() ) {
-            // echo $i . ". " . $row['name'] . "(" . $row['id'] . ")<br>";
-            echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
-          }
-               ?>
-        </select>
+               <?php 
+            while ( $row = $category->fetch_assoc() ) {
+              // echo $i . ". " . $row['name'] . "(" . $row['id'] . ")<br>";
+              echo '<option value="'.$row['id'].'">'.$row['name'].'</option>';
+            }
+                 ?>
+           </select>
         </div>
+
         <div class="form-group">
           <label for="biography">Name:</label>
           <input type="text" class="form-control" id="name" name="name" required="" />
         </div>
+        
         <div class="form-group">
           <label for="biography">Introduction:</label>
           <textarea id="biography" class="form-control" rows="3" name="introduction"></textarea>
         </div>
+
         <div class="form-group">
           <label for="biography">Description:</label>
           <textarea id="biography" class="form-control" rows="3" name="description"></textarea>
