@@ -54,6 +54,7 @@ if(isset($_POST)){
             <li><a href="home.php">Home</a></li>
             <li><a href="author.php">Author</a></li>
             <li><a href="category.php">Category</a></li>
+            <li><a href="book.php">Book</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  New <span class="caret"></span></a>
               <ul class="dropdown-menu">

@@ -1,3 +1,9 @@
+<?php 
+include_once "conn.php"; 
+$sql = "SELECT * FROM `books`";
+$result = $conn->query($sql);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,8 +38,8 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="author.php">Author</a></li>
+            <li><a href="home.php">Home</a></li>
+            <li class="active"><a href="author.php">Author</a></li>
             <li><a href="category.php">Category</a></li>
             <li><a href="book.php">Book</a></li>
             <li class="dropdown">
@@ -49,12 +55,39 @@
       </div>
     </nav>
   <div class="container">
-    <h1>Welcome to Library</h1>
+    <h1>Books</h1>
+    <p class="lead">We have <?php echo ($result->num_rows ? $result->num_rows : 0); ?> Books in our list.</p>
+    
+    <?php if($result->num_rows > 0): ?>
+      
+      <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Author ID</th>
+                <th>Category ID</th>
+                <th>Name</th>
+                <th>Introduction</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php 
+          while ( $row = $result->fetch_assoc() ) {
+            // echo $i . ". " . $row['name'] . "(" . $row['id'] . ")<br>";
+            echo "<tr><td>".$row['id']."</td><td>".$row['author_id']."</td><td>".$row['cat_id']."</td><td>".$row['name']."</td><td>".$row['introduction']."</td><td>".$row['description']."</td></tr>";
+          }
+               ?>
+              
+            </tbody>
+          </table>
+
+    <?php endif; ?>
 
 
   </div><!-- /.container -->
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
   </body>

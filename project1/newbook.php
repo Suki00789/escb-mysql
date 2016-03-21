@@ -1,27 +1,27 @@
 <?php
-include "conn.php"; 
-$sql = "SELECT * FROM `author`";
-$author = $conn->query($sql);
-
-
-$sql = "SELECT * FROM `category`";
-$category = $conn->query($sql);
-
-
-
-$msg = '';
-if(isset($_POST)){
   include "conn.php"; 
+  $sql = "SELECT * FROM `author`";
+  $author = $conn->query($sql);
 
-  $author_id = $_POST['author_id'];
-  $cat_id = $_POST['cat_id'];
-  $name = $_POST['name'];
-  $introduction = $_POST['introduction'];
-  $description = $_POST['description'];
 
-  
-} 
+  $sql = "SELECT * FROM `category`";
+  $category = $conn->query($sql);
+
+
+
+  $msg = '';
+  if(isset($_POST)){
+    
+
+    $author_id = $_POST['author_id'];
+    $cat_id = $_POST['cat_id'];
+    $name = $_POST['name'];
+    $introduction = $_POST['introduction'];
+    $description = $_POST['description'];
+  } 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -59,6 +59,7 @@ if(isset($_POST)){
             <li><a href="home.php">Home</a></li>
             <li><a href="author.php">Author</a></li>
             <li><a href="category.php">Category</a></li>
+            <li><a href="book.php">Book</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  New <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -74,7 +75,24 @@ if(isset($_POST)){
   <div class="container">
     <h1>New Book</h1>
 
+    <?php if (!empty($msg)) { ?>
 
+      <div class="alert alert-info">
+        <?php echo "$msg"; ?>
+      </div>
+    <?php  }; ?>
+
+
+    <?php if(isset($name)): ?>
+      <p>Your book info is: </p>
+      <ul>
+        <li>Author ID : <strong><?php echo $author_id; ?></strong></li>
+        <li>Category ID : <strong><?php echo $cat_id; ?></strong></li>
+        <li>Name : <strong><?php echo $name; ?></strong></li>
+        <li>Introduction : <strong><?php echo $introduction; ?></strong></li>
+        <li>Description : <strong><?php echo $description; ?></strong></li>
+      </ul>
+    <?php endif; ?>
    
               
               
