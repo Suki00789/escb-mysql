@@ -1,16 +1,34 @@
 <?php  
 include "conn.php"; 
+$msg = '';
+if(isset($_POST)){
+  $id = $_POST['id'];
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $phone = $_POST['phn_no'];
+
+  if(!empty($id)){
+    $sql = "UPDATE `contacts` SET 
+      `name` = '".$name."',
+      `email`= '".$email."',
+      `phn_no` = '".$phone."'
+      WHERE `id`= $id";
+     
+
+    if($conn->query($sql)===TRUE){
+      $msg= "Updated successfully";
+    }else{
+      $msg= "Error: " . $conn->error;
+    }
+  }
+}
+
 $id = $_GET['id'];
+$sql = "SELECT * FROM `contacts` WHERE `id` =".$id;
+$contact = $conn->query($sql);
 
-$sql = "SELECT * FROM `contacts` WHERE `id`=".$id;
-$author = $conn->query($sql);
+$result = $contact->fetch_row();
 
-$result = $author->fetch_row();
-
-// print_r(  $result);die;
-
-// if(isset($_GET)){
-//   $id = $_GET['id'];
 
 ?>
 
@@ -70,9 +88,32 @@ $result = $author->fetch_row();
   <div class="container">
     <h1>New Contact</h1>
 
+
+    <?php if (!empty($msg)) { ?>
+
+      <div class="alert alert-info">
+        <?php echo "$msg"; ?>
+      </div>
+    <?php  }; ?>
+
+
+    <?php if(isset($name)): ?>
+      <p>Your contact info is: </p>
+      <ul>
+      <li>ID : <strong><?php echo $id; ?></strong></li>
+        <li>Name : <strong><?php echo $name; ?></strong></li>
+        <li>Email : <strong><?php echo $email; ?></strong></li>
+        <li>Phone no : <strong><?php echo $phn_no; ?></strong></li>
+      </ul>
+    <?php endif; ?>
+
     <?php if(isset($result[0])): ?>
      
     <form role="form" method="post" style="width: 500px;">
+        <div class="form-group">
+          <label for="name">ID:</label>
+          <input type="hidden" class="form-control" id="name" name="id" readonly="true" value="<?php echo $result[0]; ?>" required="" />
+          </div>
         <div class="form-group">
           <label for="name">Name:</label>
           <input type="text" class="form-control" id="name" name="name" value="<?php echo $result[1]; ?>" required="" />

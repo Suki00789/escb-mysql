@@ -49,6 +49,7 @@ $result = $conn->query($sql);
                 <li><a href="newcategory.php">Category</a></li>
                 <li><a href="newauthor.php">Author</a></li>
                 <li><a href="newbook.php">Book</a></li>
+                <li><a href="edit.php">Contact</a></li>
               </ul>
             </li>
           </ul>
