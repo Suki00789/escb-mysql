@@ -21,8 +21,9 @@
 
 
       if(!empty($name)){
-      $sql = "INSERT INTO `book`(`author_id`,`cat_id`,`name`,`introduction`,`description`) VALUES ('".$author_id."','".$cat_id."','".$name."','".$introduction."','".$description."')";
-
+      $sql = "INSERT INTO `books`(`author_id`,`cat_id`,`name`,`introduction`,`description`) 
+      VALUES ('".$author_id."','".$cat_id."','".$name."','".addslashes($introduction)."','".addslashes($description)."')";
+      // echo $sql;die;
       if($conn->query($sql)===TRUE){
         $msg= "new book name successfully received";
       }else{
@@ -133,13 +134,13 @@
         </div>
 
         <div class="form-group">
-          <label for="biography">Name:</label>
+          <label for="nam">Name:</label>
           <input type="text" class="form-control" id="name" name="name" required="" />
         </div>
         
         <div class="form-group">
-          <label for="biography">Introduction:</label>
-          <textarea id="biography" class="form-control" rows="3" name="introduction"></textarea>
+          <label for="intro">Introduction:</label>
+          <textarea id="intro" class="form-control" rows="3" name="introduction"></textarea>
         </div>
 
         <div class="form-group">
