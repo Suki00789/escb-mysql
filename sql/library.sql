@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 21, 2016 at 07:28 PM
+-- Generation Time: Mar 22, 2016 at 02:48 PM
 -- Server version: 5.6.28
 -- PHP Version: 5.5.31
 
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `books` (
   `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `introduction` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `description` longtext COLLATE utf8mb4_unicode_ci NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data for table `books`
@@ -69,7 +69,11 @@ CREATE TABLE IF NOT EXISTS `books` (
 
 INSERT INTO `books` (`id`, `author_id`, `cat_id`, `name`, `introduction`, `description`) VALUES
 (1, 1, 1, 'Deyal', 'Deyal is a historical novel written by Humayun Ahmed.', 'The novel named Deyal written by Humayun Ahmed shows the history of losing the father of this nation and how the nation lost him.'),
-(2, 2, 2, 'Crenial', 'It''s about fiction of science.', 'It''ll know us that our brain is our main resources. ');
+(2, 2, 2, 'Crenial', 'It''s about fiction of science.', 'It''ll know us that our brain is our main resources. '),
+(3, 1, 1, 'Holiday', 'hello', 'hello'),
+(4, 1, 1, 'Holiday', 'hello', 'hello'),
+(5, 1, 1, 'Holiday', ' ESCB Training Project with HTML, CSS, PHP and My SQL for learn purpose â€” ', ' ESCB Training Project with HTML, CSS, PHP and My SQL for learn purpose â€”  ESCB Training Project with HTML, CSS, PHP and My SQL for learn purpose â€”  ESCB Training Project with HTML, CSS, PHP and My SQL for learn purpose â€” '),
+(6, 4, 4, 'Manus', 'It''s a poem.', 'It''s about persons equality.');
 
 -- --------------------------------------------------------
 
@@ -95,6 +99,29 @@ INSERT INTO `category` (`id`, `name`, `description`) VALUES
 (5, 'War novel', 'A war novel (military fiction) is a novel in which the primary action takes place on a battlefield, or in a civilian setting (or home front), where the characters are either preoccupied with the preparations for, suffering the effects of, or recovering from war. Many war novels are historical novels.'),
 (6, 'app', 'about desc');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contacts`
+--
+
+CREATE TABLE IF NOT EXISTS `contacts` (
+  `id` int(10) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `phn_no` varchar(255) NOT NULL,
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `contacts`
+--
+
+INSERT INTO `contacts` (`id`, `name`, `email`, `phn_no`, `time`) VALUES
+(1, 'oeishe', 'oeishe@gmail.com', '0113545657', '2016-03-22 14:39:57'),
+(2, 'Afsana Afroze', 'abc@g.com', '01712345678', '2016-03-22 13:13:34'),
+(3, 'abc', 'xyz@gmail.com', '0165657686787', '2016-03-22 14:17:04');
+
 --
 -- Indexes for dumped tables
 --
@@ -118,6 +145,12 @@ ALTER TABLE `category`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `contacts`
+--
+ALTER TABLE `contacts`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -130,12 +163,17 @@ ALTER TABLE `author`
 -- AUTO_INCREMENT for table `books`
 --
 ALTER TABLE `books`
-  MODIFY `id` mediumint(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+  MODIFY `id` mediumint(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `category`
 --
 ALTER TABLE `category`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT for table `contacts`
+--
+ALTER TABLE `contacts`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
