@@ -103,7 +103,7 @@ $result = $info->fetch_row();
     <form role="form" method="post" style="width: 500px;">
         <div class="form-group">
           <label for="name">ID:</label>
-          <input type="hidden" class="form-control" id="name" name="id" readonly="true" value="<?php echo $result[0]; ?>" required="" />
+          <input type="" class="form-control" id="name" name="id" readonly="true" value="<?php echo $result[0]; ?>" required="" />
           </div>
         <div class="form-group">
           <label for="name">Name:</label>
