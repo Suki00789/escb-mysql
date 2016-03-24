@@ -1,4 +1,5 @@
 <?php
+//pyramid by loop
 
 //for($i=1;$i<=13;$i++){
 
@@ -10,10 +11,32 @@
 //echo "<br>";
 //}
 
-$dot ="";
-for($i=1;$i<=13;$i++){
-	$dot .= ".";
-	echo $dot,"<br>";
+//pyramid by variable
+
+//$dot =" ";
+//for($i=1;$i<=13;$i++){
+	//$dot .= ".";
+	//echo $dot,"<br>";
+	
+//}
+
+
+$dot = array();
+$total=17;
+for($i=0; $i<$total; $i++){
+	
+
+	if ($i > (($total-1)/2)){
+		array_pop($dot);
+		echo implode($dot, " "), "<br>";
+
+}else {
+		$dot = "$i";
+		echo implode($dot, " "), "<br>";
+
+}
+
+	
 }
 
 ?>
