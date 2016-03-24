@@ -77,7 +77,13 @@ $result = $conn->query($sql);
               <?php 
           while ( $row = $result->fetch_assoc() ) {
             // echo $i . ". " . $row['name'] . "(" . $row['id'] . ")<br>";
-            echo "<tr><td>".$row['id']."</td><td>".$row['name']."</td><td>".$row['email']."</td><td>".$row['phn_no']."</td><td>".$row['time']."</td><td><a href='edit.php?id=".$row['id']."'>Edit</a></td></tr>";
+            echo "<tr><td>".$row['id']."</td>
+                      <td>".$row['name']."</td>
+                      <td>".$row['email']."</td>
+                      <td>".$row['phn_no']."</td>
+                      <td>".$row['time']."</td>
+                      <td><a href='edit.php?id=".$row['id']."'>Edit</a></td>
+                  </tr>";
           }
                ?>
               
