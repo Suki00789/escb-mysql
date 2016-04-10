@@ -22,7 +22,7 @@ $result = $conn->query($sql);
 </head>
 <body>
 	<h2>Table</h2>
-		<table border="1px" width="60%" align="center">
+		<table border="1px" width="60%">
 			<thead>
 				<tr>
 					<th>Id</th>
