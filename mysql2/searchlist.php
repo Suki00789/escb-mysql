@@ -1,8 +1,8 @@
 <?php 
 include_once "conn.php"; 
 $sql = "SELECT * FROM `users` ";
-if(isset($_GET['Search'])){
-    $sql .=" WHERE firstname = '" . $_GET['Search'] . "'";
+if(isset($_GET['search'])){
+    $sql .=" WHERE firstname like '" . "%". $_GET['search'] . "%". "' or lastname like '" . "%". $_GET['search'] . "%". "' or email like '" . "%". $_GET['search'] . "%". "'";
   }
 $result = $conn->query($sql);
 ?>
