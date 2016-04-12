@@ -1,6 +1,10 @@
 <?php 
 include_once "conn.php"; 
-$sql = "SELECT * FROM `books`";
+$sql = "SELECT books.*, `category`.`name` as `categoryname`,`author`.`name` as `authorname` FROM `books` ";
+$sql .="LEFT JOIN `author` ON `books`.`author_id` = `author`.`id` ";
+$sql .="LEFT JOIN `category` ON `books`.`cat_id` = `category`.`id` ";
+$sql .="ORDER BY `books`.`id` ASC ";
+//$sql .="LIMIT 0,10";
 $result = $conn->query($sql);
 ?>
 
@@ -75,9 +79,11 @@ $result = $conn->query($sql);
               <?php 
           while ( $row = $result->fetch_assoc() ) {
             // echo $i . ". " . $row['name'] . "(" . $row['id'] . ")<br>";
+            //for check
+            //print_r($row);die();
             echo "<tr><td>".$row['id']."</td>
-                      <td>".$row['author_id']."</td>
-                      <td>".$row['cat_id']."</td>
+                      <td>".$row['authorname']."</td>
+                      <td>".$row['categoryname']."</td>
                       <td>".$row['name']."</td>
                       <td>".$row['introduction']."</td>
                       <td>".$row['description']."</td>
