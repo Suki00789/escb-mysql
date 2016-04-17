@@ -2,10 +2,8 @@
 include_once "conn.php"; 
 $sql = "SELECT * FROM `users` ";
 if(isset($_GET['search'])){
-    $sql .=" WHERE firstname like '" . "%". $_GET['search'] . "%". "' or lastname like '" . "%". $_GET['search'] . "%". "' or email like '" . "%". $_GET['search'] . "%". "'";
+    $sql .=" WHERE firstname like '" . "%". $_GET['search'] . "%". "' ";
   }
-  $sql .="ORDER BY `id` DESC";//ASC
-  $sql .="LIMIT 20";//for limit
 $result = $conn->query($sql);
 ?>
 
