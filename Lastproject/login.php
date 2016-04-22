@@ -2,9 +2,11 @@
 
 // Start the session
 session_start();
-if($_SESSION['logedin']){
-    echo "hello " . $_SESSION['name'];
-  }
+
+// print_r($_SESSION);
+// if($_SESSION['logedin']){
+//     echo "hello " . $_SESSION['name'];
+//   }
 
 if(isset($_POST['name'])){
 include "conn.php"; 
@@ -18,12 +20,19 @@ $result = $conn->query($sql);
 
 if($result->num_rows){
     //echo $result->num_rows;
+
   $row = $result->fetch_row();
   $_SESSION['logedin'] = true;
-  $_SESSION['name'] = $row[1];
+  $_SESSION['user'] = array(
+      'id'=>$row['0'],
+      'name'=>$row[2]
+      );
+
+   // echo $result->num_rows;
   }
+
   if($_SESSION['logedin']){
-    echo "hello " . $_SESSION['name'];
+    echo "hello " . $_SESSION['user']['name'];
   }
   //else{
     //echo "nO rECORD FOUND";

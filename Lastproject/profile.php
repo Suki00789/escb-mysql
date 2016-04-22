@@ -5,13 +5,17 @@ if(isset($_POST)){
 
   $userid = $_POST['userid'];
   $name = $_POST['name'];
-  $mail = $_POST['email'];
-  $pass = $_POST['pass'];
+  $dob = $_POST['dob'];
+  $profession = $_POST['pro'];
+  $gender = $_POST['gndr'];
+  $introduction = $_POST['intro'];
+  $fb = $_POST['fb'];
+  $twt = $_POST['twiit'];
 
 
   if(!empty($name)){
-    $sql = "INSERT INTO `registration`(`userid`,`name`,`email`,`pass`) VALUES ( '".$userid."', '".$name."', '".$mail."', '".md5($pass)."')";
-
+    $sql = "INSERT INTO `profile`(`userid`, `name`,`dob`,`pro`,`gndr`,`intro`,`fb`,`twiit`) VALUES ('".$userid."','".$name."', '".$dob."', '".$profession."', '".$gender."', '".$introduction."', '".$fb."', '".$twt."')";
+//echo $sql;die();
     if($conn->query($sql)===TRUE){
       $msg= "successfully received";
     }else{
@@ -42,27 +46,14 @@ if(isset($_POST)){
 
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.php">Home</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav pull-right">
-            <li><a href="login.php">Login</a></li>
-            <li><a href="reg.php">Registration</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+    
   <div class="container">
-    <h1>Login Form</h1>
+    
+
+    <?php $basefile = basename(__FILE__,'.php'); ?>
+    <?php include_once 'header.php'; ?>
+
+    <h1>Profile</h1>
 
     <?php if (!empty($msg)) { ?>
 
@@ -78,16 +69,32 @@ if(isset($_POST)){
           <input type="text" class="form-control" id="name" name="userid" required="true" />
         </div>
         <div class="form-group">
-          <label for="name">Name:</label>
+          <label for="name">Full name:</label>
           <input type="text" class="form-control" id="name" name="name" required="true" />
         </div>
         <div class="form-group">
-          <label for="password">E-mail:</label>
-          <input type="text" class="form-control" id="pass" name="email" required="true" />
+          <label for="dob">Date of birth:</label>
+          <input type="text" class="form-control" id="date of birth" name="dob" required="true" />
         </div>
         <div class="form-group">
-          <label for="password">Password:</label>
-          <input type="text" class="form-control" id="pwd" name="pass" required="true" />
+          <label for="pro">Profession:</label>
+          <input type="text" class="form-control" id="pro" name="pro" required="true" />
+        </div>
+        <div class="form-group">
+          <label for="gndr">Gender:</label>
+          <input type="text" class="form-control" id="gndr" name="gndr" required="true" />
+        </div>
+        <div class="form-group">
+          <label for="intro">Introduction:</label>
+          <textarea class="form-control" id="intro" name="intro" required="true"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="fb">Facebook:</label>
+          <input type="text" class="form-control" id="fb" name="fb" required="true" />
+        </div>
+        <div class="form-group">
+          <label for="twitt">Twitter:</label>
+          <input type="text" class="form-control" id="twitt" name="twiit" required="true" />
         </div>
         <div class="checkbox">
           <label><input type="checkbox">Remember Me</label>
