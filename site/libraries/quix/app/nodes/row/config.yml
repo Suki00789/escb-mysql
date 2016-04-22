@@ -1,0 +1,79 @@
+slug: row
+name: Row
+type: row
+visibility:
+  lg: true
+  md: true
+  sm: true
+  xs: true
+form:
+  general:
+    - name: container
+      type: switch
+      label: Use Container
+      help: Wrap row with a container
+
+    - name: equal_column
+      type: switch
+      label: Equalize Column Heights
+
+    - name: bg_image
+      label: Background Image
+      type: image
+
+    - name: image_repeat
+      label: Image Repeat 
+      type: select
+      value: no-repeat
+      depends:
+        bg_image : '*'
+      options: 
+        no-repeat : No Repeat
+        repeat-x : Repeat X 
+        repeat-y : Repeat Y
+
+    - name: image_position
+      type: select
+      label: Image Position 
+      value: initial
+      depends:
+        bg_image : '*'
+      options:
+        initial: Default
+        center: Center
+        top left : Top Left 
+        top center : Top Center
+        top right: Top Right
+        center right: Center Right
+        center left: Center Left
+        bottom left: Bottom Left
+        bottom center: Bottom Center
+        bottom right: Bottom Right
+
+    - name : image_size
+      type : select
+      label : Image Size
+      value : initial
+      depends:
+        bg_image : '*'
+      options :
+        initial : Default
+        cover : Cover 
+        contain : Contain 
+
+    - name: bg_color
+      type: color
+      label: Background Color
+
+    - name: bg_parallax
+      type: switch
+      label: Parallax Effect
+      help: 'If enabled, your background image will stay fixed as your scroll, creating a fun parallax-like effect.'
+
+    - name: margin
+      type: margin
+      label: Custom margin
+
+    - name: padding
+      type: padding
+      label: Custom padding

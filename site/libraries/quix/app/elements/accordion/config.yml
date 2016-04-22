@@ -1,0 +1,75 @@
+name: Accordion
+slug: accordion
+groups: interactive
+form:
+  general:
+    - name: accordions 
+      type: group-repeater
+      schema:
+        - name: title
+          value: Accordion Title
+
+        - name: content
+          type: editor
+          value: Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos.
+
+        - name: enable_icon
+          type: switch
+
+        - name: icon 
+          type : icon 
+          depends:
+            enable_icon : true
+      value:
+        - title: Accordion Title
+          content: Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos
+    
+    - name: type
+      type: select
+      value: accordion
+      help: Accordion allow one section to stay open at a time. Expandable allow multiple sections to stay open.
+      options:
+        accordion: Accordion
+        expandable: Expandable
+
+    - name: animation
+      type: select
+      value: fadeIn
+      label: Animation
+      options:
+        fadeInLeft: Left To Right
+        fadeInRight: Right To Left
+        fadeInUp: Bottom To Top
+        fadeInDown: Top To Bottom
+        fadeIn: Fade In
+        zoomIn: Zoom In
+        0: No Animation
+  styles:
+    - name: header_font
+      type: typography
+      label: Header Font 
+
+    - name: header_bg_color
+      type: color
+      label: Header Background
+
+    - name: header_text_color
+      type: color
+      label: Header Text Color
+
+    - name: body_font
+      type: typography
+      label: Body Font 
+
+    - name: body_bg_color
+      type: color
+      label: Body Background
+
+    - name: body_text_color
+      type: color
+      label: Body Text Color
+
+    - name: border_color
+      type: color
+      label: Border Color
+      value: #ddd

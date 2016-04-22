@@ -1,0 +1,57 @@
+name: Icon
+slug: icon
+groups: content
+
+form:
+  general:
+    - name: icon
+      type: icon
+
+    - name: alignment
+      type: select
+      value: center
+      label: Alignment
+      options:
+        left: Left
+        center: Center
+        right: Right
+
+  styles:
+    - name: icon_size
+      type: slider
+      label: Icon Size
+      value: 30
+
+    - name: color
+      type: color
+
+    - name: border
+      type: switch
+      label: Use Border
+      value: 0
+
+    - name: border_color
+      type: color
+      label: Border Color
+      depends: 
+        border : true
+
+    - name: border_width
+      type: slider
+      label: Border Width
+      value: 2
+      depends: 
+        border : true
+
+    - name: border_radius
+      type: slider
+      depends: 
+        border : true
+      label: Border Radius
+      value: 30
+
+    - name: margin
+      type: margin
+
+    - name: padding
+      type: padding

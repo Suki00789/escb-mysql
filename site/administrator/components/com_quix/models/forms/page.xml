@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset>
+        <field name="id" type="text" default="0" label="COM_QUIX_FORM_LBL_PAGE_ID" readonly="true" class="readonly" description="JGLOBAL_FIELD_ID_DESC" />
+        <field name="title" type="text" label="COM_QUIX_FORM_LBL_PAGE_TITLE" description="COM_QUIX_FORM_DESC_PAGE_TITLE" required="true" class="input-xxlarge input-large-text" />
+        <field name="data" type="hidden" filter="raw" />
+        <field name="access" type="usergroup" label="COM_QUIX_FORM_LBL_PAGE_ACCESS" description="COM_QUIX_FORM_DESC_PAGE_ACCESS" />
+        <field name="language" type="language" label="COM_QUIX_FORM_LBL_PAGE_LANGUAGE" description="COM_QUIX_FORM_DESC_PAGE_LANGUAGE" default="*" client="site" />
+        <field name="created_by" type="createdby" default="" label="COM_QUIX_FORM_LBL_PAGE_CREATED_BY" description="COM_QUIX_FORM_DESC_PAGE_CREATED_BY" />
+
+        <field name="state" type="list" label="JSTATUS" description="JFIELD_PUBLISHED_DESC" class="inputbox" size="1" default="1">
+            <option value="1">JPUBLISHED</option>
+            <option value="0">JUNPUBLISHED</option>
+            <option value="2">JARCHIVED</option>
+            <option value="-2">JTRASHED</option>
+        </field>
+        <field name="checked_out" type="hidden" filter="unset" />
+        <field name="checked_out_time" type="hidden" filter="unset" />
+
+    </fieldset>
+
+
+    <fields name="metadata" label="COM_QUIX_FORM_LBL_PAGE_METADATA" description="COM_QUIX_FORM_DESC_PAGE_METADATA">
+
+      <field type="spacer" name="metaspacer" class="text" label="COM_QUIX_FORM_DESC_PAGE_METADATA"  />
+
+      <field type="text" name="title" class="text" label="COM_QUIX_FORM_LBL_PAGE_METADATA_TITLE" description="COM_QUIX_FORM_LBL_PAGE_METADATA_TITLE_PLACEHOLDER" />
+
+      <field name="image_intro" type="media" label="COM_QUIX_FORM_LBL_PAGE_METADATA_IMAGE" description="COM_QUIX_FORM_DESC_PAGE_METADATA_IMAGE" />
+
+      <field type="textarea" name="desc" class="text" label="COM_QUIX_FORM_LBL_PAGE_METADATA_DESC"  />
+
+  	</fields>
+
+    <fieldset name="accesscontrol">
+        <field name="asset_id" type="hidden" filter="unset" />
+        <field name="rules" type="rules" label="JFIELD_RULES_LABEL" translate_label="false" filter="rules" validate="rules" class="inputbox" component="com_quix" section="page" />
+    </fieldset>
+    
+    <field type="hidden" name="params" label="COM_QUIX_FORM_LBL_PAGE_PARAMS" description="COM_QUIX_FORM_DESC_PAGE_PARAMS" />
+
+</form>

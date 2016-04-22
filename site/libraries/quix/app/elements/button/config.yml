@@ -1,0 +1,136 @@
+name: Button
+slug: button
+groups: content
+form:
+  general:
+    - name: button
+      type: link
+
+    - name: alignment
+      type: select
+      value: left
+      options:
+        left: Left
+        right: Right
+        center: Center
+
+    - name: icon
+      type: icon
+
+    - name: icon_placement
+      type: select
+      value: left
+      options:
+        left: Left
+        right: Right
+
+    - name: type
+      type: select
+      value: regular
+      options:
+        regular: Regular
+        fullwidth: Full Width
+
+    - name: style
+      type: select
+      value: qx-btn-default
+      options:
+        qx-btn-default: Default
+        qx-btn-primary: Primary
+        qx-btn-success: Success
+        qx-btn-info: Info
+        qx-btn-warning: Warning
+        qx-btn-danger: Danger
+        qx-btn-link: Link
+
+    - name: animation
+      type: select
+      value: 0
+      label: Animation
+      options:
+        fadeInLeft: Left To Right
+        fadeInRight: Right To Left
+        fadeInUp: Bottom To Top
+        fadeInDown: Top To Bottom
+        fadeIn: Fade In
+        zoomIn: Zoom In
+        0: No Animation
+
+  styles:
+    - name: font
+      type: typography
+      value:
+        family:
+        size:
+        height:
+        case:
+        spacing:
+
+    - name: text_color
+      type: color
+      label: Text Color
+
+    - name: bg_color
+      type: color
+      label: Background Color
+
+    - name: bg_color_hover
+      type: color
+      label: Hover Background Color
+
+    - name: text_color_hover
+      type: color
+      label: Hover Text Color
+
+    - name: margin
+      type: margin
+
+    - name: padding
+      type: padding
+
+    - name: border
+      type: switch
+      label: Use Border
+
+    - name: border_width
+      type: slider
+      label: Border Width
+      value: 2
+      depends:
+        border: true
+
+    - name: border_radius
+      type: slider
+      label: Border Radius
+      value: 3
+      depends:
+        border: true
+
+    - name: border_style
+      type: select
+      value: solid
+      depends:
+        border: true
+      options:
+        solid: Solid
+        dotted: Dotted
+        dashed: Dashed
+        double: Double
+        groove: Groove
+        ridge: Ridge
+        inset: Inset
+        outset: Outset
+
+    - name: border_color
+      type: color
+      label: Border Color
+      depends:
+        border: true
+
+    - name: button_icon_color
+      type: color
+      label: Icon Color
+
+    - name: button_icon_color_hover
+      type: color
+      label: Icon Hover Color

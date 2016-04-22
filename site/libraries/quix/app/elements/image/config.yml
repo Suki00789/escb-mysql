@@ -1,0 +1,85 @@
+name: Image
+slug: image
+groups: content
+
+form:
+  general:
+    - name: image
+      type: image
+      label: Image Url
+      help: Upload your desired image, or type in the URL to the image you would like to display.
+
+    - name: alt_text
+      type: text
+      label: Alternative Text
+
+    - name: alignment
+      type: select
+      value: center
+      label: Image Alignment
+      options:
+        left: Left
+        center: Center
+        right: Right
+
+    - name: link
+      type: link
+      value:
+        url:
+        target:
+      help: If you would like your image to be a link, input your destination URL here. No link will be created if this field is left blank.
+
+    - name: open_lightbox
+      type: switch
+      label: Open In Lightbox
+      value: 0
+
+    - name: animation
+      type: select
+      value: fadeIn
+      label: Animation
+      options:
+        fadeInLeft: Left To Right
+        fadeInRight: Right To Left
+        fadeInUp: Bottom To Top
+        fadeInDown: Top To Bottom
+        fadeIn: Fade In
+        zoomIn: Zoom In
+        0: No Animation
+
+  styles:
+    - name: margin
+      type: margin
+
+    - name: border
+      type: switch
+      label: Use Border
+      value: 0
+
+    - name: border_color
+      type: color
+      label: Border Color
+      depends:
+        border: true
+
+    - name: border_width
+      type: slider
+      label: Border Width
+      value: 2
+      depends:
+        border: true
+
+    - name: border_style
+      type: select
+      value: solid
+      depends:
+        border: true
+      options:
+        solid: Solid
+        dotted: Dotted
+        dashed: Dashed
+        double: Double
+        groove: Groove
+        ridge: Ridge
+        inset: Inset
+        outset: Outset

@@ -1,0 +1,92 @@
+name: Text
+slug: text
+groups: content
+form:
+  general:
+    - name: alignment
+      type: select
+      value: left
+      label: Text Alignment
+      options:
+        left: Left
+        right: Right
+        center: Center
+
+    - name: content
+      type: editor
+      value: Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos.
+
+    - name: animation
+      type: select
+      value: fadeIn
+      label: Animation
+      options:
+        fadeInLeft: Left To Right
+        fadeInRight: Right To Left
+        fadeInUp: Bottom To Top
+        fadeInDown: Top To Bottom
+        fadeIn: Fade In
+        zoomIn: Zoom In
+        0: No Animation
+
+  styles:
+    - name: font
+      type: typography
+
+    - name: text_color
+      type: color
+      label: Text Color
+
+    - name: bg_image
+      type: image
+      label: Background Image
+
+    - name: image_repeat
+      label: Image Repeat
+      type: select
+      value: no-repeat
+      depends:
+        bg_image : '*'
+      options:
+        no-repeat : No Repeat
+        repeat-x : Repeat X
+        repeat-y : Repeat Y
+
+    - name: image_position
+      type: select
+      label: Image Position
+      value: initial
+      depends:
+        bg_image : '*'
+      options:
+        initial: Default
+        center: Center
+        top left : Top Left
+        top center : Top Center
+        top right: Top Right
+        center right: Center Right
+        center left: Center Left
+        bottom left: Bottom Left
+        bottom center: Bottom Center
+        bottom right: Bottom Right
+
+    - name : image_size
+      type : select
+      label : Image Size
+      value : initial
+      depends:
+        bg_image : '*'
+      options :
+        initial : Default
+        cover : Cover
+        contain : Contain
+
+    - name: bg_color
+      type: color
+      label: Background Color
+
+    - name: margin
+      type: margin
+
+    - name: padding
+      type: padding

@@ -1,0 +1,157 @@
+<?php
+/**
+ * @version    CVS: 1.0.0
+ * @package    com_quix
+ * @author     ThemeXpert <info@themexpert.com>
+ * @copyright  Copyright (C) 2015. All rights reserved.
+ * @license    GNU General Public License version 2 or later; see LICENSE.txt
+ */
+// No direct access
+defined('_JEXEC') or die;
+
+JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
+JHtml::_('formbehavior.chosen', 'select');
+quix_header();
+?>
+
+<div class="spinner-wrapper valign-wrapper">
+  <div class="spinner valign">
+    <div class="bounce1"></div>
+    <div class="bounce2"></div>
+    <div class="bounce3"></div>
+  </div>
+</div>
+
+<form action="<?php echo JRoute::_('index.php?option=com_quix&layout=edit&id=' . (int) $this->item->id); ?>" method="post" enctype="multipart/form-data" name="adminForm" id="page-form" class="quix-layout-builder form-validate">
+  <div class="qx-mainheader">
+    <div class="container">
+  		<div class="row">
+  			<div class="col s6">
+            <div class="form-group row">
+                <div class="control-label col s1">
+                    <?php echo $this->form->getLabel('title'); ?>
+                </div>
+                <div class="col s8">
+                    <?php echo $this->form->getInput('title'); ?>
+                </div>
+            </div>
+  			</div>
+        <div class="col s6">
+          <div id="qx-toolbar"></div>
+        </div>
+  		</div>
+    </div>
+	</div>
+
+  <!-- <div class="qx-jappbar">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <ul class="qx-appbar__navs">
+            <li class="active"><a href="#layout" data-toggle="tab"><?php echo JText::_('COM_QUIX_TITLE_PAGE_LAYOUT'); ?></a></li>
+            <li><a href="#metadata" data-toggle="tab"><?php echo JText::_('COM_QUIX_FORM_LBL_PAGE_METADATA'); ?></a></li>
+            <li><a href="#params" data-toggle="tab"><?php echo JText::_('COM_QUIX_FORM_LBL_PAGE_PARAMS'); ?></a></li>
+          </ul>
+          <div id="qx-appbar"></div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div id="system-message-container"></div>
+
+  <div class="form-horizontal">
+
+    <div class="tab-content" id="myTabContent">
+
+      <div id="layout" class="active">
+        <div class="row">
+            <div class="col s12 form-horizontal">
+                <div class="app-mount">
+                    <div class="container">
+                      <div id='qx-mount'>
+
+                      </div>
+                      <?php echo quix_footer_credit(); ?>
+                    </div>
+                </div>
+								<?php echo $this->form->getInput('data'); ?>
+						</div>
+				</div>
+      </div>
+
+      <div id="metadata" class="hide">
+        <div class="container">
+          <div class="row">
+              <div class="col s12 form-horizontal">
+                <?php echo $this->form->getControlGroup('metadata'); ?>
+      					<?php foreach ($this->form->getGroup('metadata') as $field) : ?>
+      						<?php echo $field->getControlGroup(); ?>
+                <?php endforeach; ?>
+  						</div>
+  				</div>
+          <?php echo quix_footer_credit(); ?>
+        </div>
+      </div>
+
+      <div id="params" class="hide">
+        <div class="container">
+          <div class="row">
+              <div class="col s12 form-horizontal">
+  							<fieldset class="adminform">
+
+  								<div class="control-group">
+  										<div class="control-label">
+  												<?php echo $this->form->getLabel('state'); ?>
+  										</div>
+  										<div class="controls">
+  												<?php echo $this->form->getInput('state'); ?>
+  										</div>
+  								</div>
+  								<div class="control-group">
+  										<div class="control-label">
+  												<?php echo $this->form->getLabel('access'); ?>
+  										</div>
+  										<div class="controls">
+  											<?php echo $this->form->getInput('access'); ?>
+  										</div>
+  								</div>
+  								<div class="control-group">
+  										<div class="control-label">
+  												<?php echo $this->form->getLabel('language'); ?>
+  										</div>
+  										<div class="controls">
+  												<?php echo $this->form->getInput('language'); ?>
+  										</div>
+  								</div>
+  							</fieldset>
+              </div>
+          </div>
+          <?php echo quix_footer_credit(); ?>
+        </div>
+      </div>
+      <div id="permissions" class="tab-pane hide">
+        <?php if (JFactory::getUser()->authorise('core.admin','quix')) : ?>
+          <?php echo $this->form->getInput('rules'); ?>
+        <?php endif; ?>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <?php quix_footer(); ?>
+
+  <input type="hidden" name="jform[id]" id="jform_id" value="<?php echo $this->item->id; ?>" />
+	<input type="hidden" name="jform[ordering]" value="<?php echo $this->item->ordering; ?>" />
+
+	<?php if(empty($this->item->created_by)){ ?>
+	<input type="hidden" name="jform[created_by]" value="<?php echo JFactory::getUser()->id; ?>" />
+	<?php } else{ ?>
+	<input type="hidden" name="jform[created_by]" value="<?php echo $this->item->created_by; ?>" />
+	<?php } ?>
+	<input type="hidden" name="jform[checked_out]" value="<?php echo $this->item->checked_out; ?>" />
+	<input type="hidden" name="jform[checked_out_time]" value="<?php echo $this->item->checked_out_time; ?>" />
+  <input type="hidden" name="task" value="page.apply" />
+  <?php echo JHtml::_( 'form.token'); ?>
+</form>

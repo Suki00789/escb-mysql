@@ -1,0 +1,15 @@
+/**
+ * @package    Quix for Joomla!
+ * @version    0.0.1
+ * @author     themexpert.com
+ * @copyright  (C) 20012-2016 ThemeXpert. All rights reserved.
+ * @license    GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ */
+
+#toolbar-clearcache,
+#toolbar-mysettings{
+	float: right;
+}
+.text-uppercase{
+	text-transform: uppercase;
+}

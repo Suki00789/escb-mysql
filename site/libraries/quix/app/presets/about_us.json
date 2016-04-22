@@ -1,0 +1,2274 @@
+{
+  "groups": [],
+  "title": "About Us Page",
+  "type": "layout",
+  "data": [
+    {
+      "visibility": {
+        "lg": true,
+        "md": true,
+        "sm": true,
+        "xs": true
+      },
+      "form": {
+        "general": {
+          "container": false,
+          "bg_image": "",
+          "image_repeat": "no-repeat",
+          "image_position": "initial",
+          "image_size": "initial",
+          "bg_color": "",
+          "bg_parallax": false,
+          "padding": {
+            "top": "40px",
+            "left": "",
+            "bottom": "40px",
+            "right": ""
+          }
+        },
+        "advanced": {
+          "label": "About",
+          "id": "qx-section-24135",
+          "class": ""
+        }
+      },
+      "slug": "section",
+      "children": [
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": false,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "initial",
+              "padding": {
+                "top": "",
+                "bottom": ""
+              },
+              "bg_parallax": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-87463",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-52465",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<h3>About Us</h3>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "40px",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "30px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Heading",
+                      "id": "qx-text-70470",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos.Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos.</p>\n<p>Deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos.</p>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-23508",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                }
+              ],
+              "size": {
+                "lg": 0.5833333333333334,
+                "md": 0.6666666666666666,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-41467",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "image": "https://s3.amazonaws.com/tx-quix/corporate-1.jpg",
+                      "alt_text": "Corporate",
+                      "alignment": "center",
+                      "link": {
+                        "url": null,
+                        "target": null
+                      },
+                      "open_lightbox": 0,
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border": 0,
+                      "border_color": "",
+                      "border_width": 2,
+                      "border_style": "solid"
+                    },
+                    "advanced": {
+                      "label": "Image",
+                      "id": "qx-image-81474",
+                      "class": ""
+                    }
+                  },
+                  "slug": "image"
+                }
+              ],
+              "size": {
+                "lg": 0.4166666666666667,
+                "md": 0.3333333333333333,
+                "sm": 0.5,
+                "xs": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "visibility": {
+        "lg": true,
+        "md": true,
+        "sm": true,
+        "xs": true
+      },
+      "form": {
+        "general": {
+          "container": false,
+          "bg_image": "",
+          "image_repeat": "no-repeat",
+          "image_position": "initial",
+          "image_size": "initial",
+          "bg_color": "#f5f5f5",
+          "bg_parallax": false,
+          "padding": {
+            "top": "40px",
+            "left": "20px",
+            "bottom": "40px",
+            "right": "20px"
+          }
+        },
+        "advanced": {
+          "label": "Core Services",
+          "id": "qx-section-73228",
+          "class": ""
+        }
+      },
+      "slug": "section",
+      "children": [
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": false,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "initial",
+              "padding": {
+                "top": null,
+                "bottom": null
+              },
+              "bg_parallax": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-1229",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-46231",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "center",
+                      "animation": "fadeIn",
+                      "placement": "beforeTitle",
+                      "image_alt_text": "",
+                      "title": "Kickass Development",
+                      "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. </p>",
+                      "icon": "fa fa-paper-plane-o",
+                      "link": {
+                        "url": null,
+                        "target": null
+                      },
+                      "image": "",
+                      "icon_enabled": true
+                    },
+                    "styles": {
+                      "header_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "18px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "image_size": "initial",
+                      "body_color": "",
+                      "bg_color": "",
+                      "icon_font_size": "60",
+                      "border": false,
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_color": "",
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "",
+                      "border_width": 2,
+                      "icon_color": "",
+                      "border_style": "solid",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Blurb",
+                      "id": "qx-blurb-87266",
+                      "class": ""
+                    }
+                  },
+                  "slug": "blurb"
+                }
+              ],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-83233",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "center",
+                      "animation": "fadeIn",
+                      "placement": "beforeTitle",
+                      "image_alt_text": "",
+                      "title": "Creative Process",
+                      "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. </p>",
+                      "icon": "fa fa-heart-o",
+                      "link": {
+                        "url": null,
+                        "target": null
+                      },
+                      "image": "",
+                      "icon_enabled": true
+                    },
+                    "styles": {
+                      "header_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "18px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "image_size": "initial",
+                      "body_color": "",
+                      "bg_color": "",
+                      "icon_font_size": "60",
+                      "border": false,
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_color": "",
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "",
+                      "border_width": 2,
+                      "icon_color": "",
+                      "border_style": "solid",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Blurb",
+                      "id": "qx-blurb-84366",
+                      "class": ""
+                    }
+                  },
+                  "slug": "blurb"
+                }
+              ],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-51235",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "center",
+                      "animation": "fadeIn",
+                      "placement": "beforeTitle",
+                      "image_alt_text": "",
+                      "title": "Super Management",
+                      "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. </p>",
+                      "icon": "fa fa-sun-o",
+                      "link": {
+                        "url": null,
+                        "target": null
+                      },
+                      "image": "",
+                      "icon_enabled": true
+                    },
+                    "styles": {
+                      "header_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "18px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "image_size": "initial",
+                      "body_color": "",
+                      "bg_color": "",
+                      "icon_font_size": "60",
+                      "border": false,
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_color": "",
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "",
+                      "border_width": 2,
+                      "icon_color": "",
+                      "border_style": "solid",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Blurb",
+                      "id": "qx-blurb-0500",
+                      "class": ""
+                    }
+                  },
+                  "slug": "blurb"
+                }
+              ],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-65237",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "center",
+                      "animation": "fadeIn",
+                      "placement": "beforeTitle",
+                      "image_alt_text": "",
+                      "title": "Xtream Innovation",
+                      "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. </p>",
+                      "icon": "fa fa-lightbulb-o",
+                      "link": {
+                        "url": null,
+                        "target": null
+                      },
+                      "image": "",
+                      "icon_enabled": true
+                    },
+                    "styles": {
+                      "header_margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "18px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "image_size": "initial",
+                      "body_color": "",
+                      "bg_color": "",
+                      "icon_font_size": "60",
+                      "border": false,
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "border_color": "",
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "",
+                      "border_width": 2,
+                      "icon_color": "",
+                      "border_style": "solid",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Blurb",
+                      "id": "qx-blurb-74569",
+                      "class": ""
+                    }
+                  },
+                  "slug": "blurb"
+                }
+              ],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 0.5,
+                "xs": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "visibility": {
+        "lg": true,
+        "md": true,
+        "sm": true,
+        "xs": true
+      },
+      "form": {
+        "general": {
+          "container": false,
+          "bg_image": "",
+          "image_repeat": "no-repeat",
+          "image_position": "initial",
+          "image_size": "initial",
+          "bg_color": "",
+          "bg_parallax": false,
+          "padding": {
+            "top": "40px",
+            "left": "",
+            "bottom": "40px",
+            "right": ""
+          }
+        },
+        "advanced": {
+          "label": "Why Us",
+          "id": "qx-section-7092",
+          "class": ""
+        }
+      },
+      "slug": "section",
+      "children": [
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": false,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "initial",
+              "padding": {
+                "top": null,
+                "bottom": null
+              },
+              "bg_parallax": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-96136",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-26138",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<h3>Why Choose Us</h3>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "40px",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "30px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-99143",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "accordions": [
+                        {
+                          "title": "Awesome Design",
+                          "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos</p>",
+                          "enable_icon": true,
+                          "icon": "fa fa-star-o"
+                        },
+                        {
+                          "title": "24/7 Customer Service",
+                          "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos</p>",
+                          "enable_icon": true,
+                          "icon": "fa fa-hand-o-right"
+                        },
+                        {
+                          "title": "Award Wining Agency",
+                          "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos</p>",
+                          "enable_icon": true,
+                          "icon": "fa fa-mortar-board"
+                        },
+                        {
+                          "title": "Satisfaction Guaranty ",
+                          "content": "<p>Lorem ipsum dolor sit amet timeam deleniti mnesarchum ex sed alii hinc dolores ad cum. Urbanitas similique ex nam paulo temporibus ea vis id odio adhuc nostrum eos</p>",
+                          "enable_icon": true,
+                          "icon": "fa fa-heart-o"
+                        }
+                      ],
+                      "type": "accordion",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "header_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "header_bg_color": "",
+                      "header_text_color": "",
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "body_bg_color": "",
+                      "body_text_color": "",
+                      "border_color": ""
+                    },
+                    "advanced": {
+                      "label": "Accordion",
+                      "id": "qx-accordion-97205",
+                      "class": ""
+                    }
+                  },
+                  "slug": "accordion"
+                }
+              ],
+              "size": {
+                "lg": 0.5,
+                "md": 0.5,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-70140",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<h3>Our Expertise</h3>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "40px",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "30px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-4335",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "barcounters": [
+                        {
+                          "title": "HTML",
+                          "percent": "90",
+                          "bar_color": "#4CAF50",
+                          "percentage_color": "#fff",
+                          "bar_type": "qx-progress-bar-striped qx-active"
+                        },
+                        {
+                          "title": "Css",
+                          "percent": "96",
+                          "bar_color": "#03A9F4",
+                          "percentage_color": "#fff",
+                          "bar_type": "qx-progress-bar-striped qx-active"
+                        },
+                        {
+                          "title": "Photoshop",
+                          "percent": "75",
+                          "bar_color": "#FFC107",
+                          "percentage_color": "#fff",
+                          "bar_type": "qx-progress-bar-striped qx-active"
+                        },
+                        {
+                          "title": "Illustration",
+                          "percent": "40",
+                          "bar_color": "#FF5722",
+                          "percentage_color": "#fff",
+                          "bar_type": "qx-progress-bar-striped qx-active"
+                        },
+                        {
+                          "title": "Copywriting",
+                          "percent": "85",
+                          "bar_color": "#673AB7",
+                          "percentage_color": "#fff",
+                          "bar_type": "qx-progress-bar-striped qx-active"
+                        }
+                      ]
+                    },
+                    "style": {
+                      "title_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "border_radius": 0
+                    },
+                    "advanced": {
+                      "label": "Bar Counter",
+                      "id": "qx-bar-counter-56370",
+                      "class": ""
+                    }
+                  },
+                  "slug": "bar-counter"
+                }
+              ],
+              "size": {
+                "lg": 0.5,
+                "md": 0.5,
+                "sm": 0.5,
+                "xs": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "visibility": {
+        "lg": true,
+        "md": true,
+        "sm": true,
+        "xs": true
+      },
+      "form": {
+        "general": {
+          "container": false,
+          "bg_image": "",
+          "image_repeat": "no-repeat",
+          "image_position": "initial",
+          "image_size": "initial",
+          "bg_color": "",
+          "bg_parallax": false,
+          "padding": {
+            "top": "",
+            "left": "",
+            "bottom": "",
+            "right": ""
+          }
+        },
+        "advanced": {
+          "label": "Team Members",
+          "id": "qx-section-8083",
+          "class": ""
+        }
+      },
+      "slug": "section",
+      "children": [
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": false,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "initial",
+              "padding": {
+                "top": "30px",
+                "bottom": "30px"
+              },
+              "bg_parallax": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-9831",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-92833",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "name": "Team Member 1",
+                      "position": "CEO, ThemeXpert",
+                      "image": "https://s3.amazonaws.com/tx-quix/person.jpg",
+                      "description": "",
+                      "social": [
+                        "https://www.facebook.com/ThemeXpert",
+                        "https://www.twitter.com/themexpert"
+                      ]
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "animation": "fadeIn",
+                      "bg_color": "",
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "body_text_color": "",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "",
+                      "icon_hover_color": "",
+                      "icon_color": ""
+                    },
+                    "advanced": {
+                      "label": "Person",
+                      "id": "qx-person-75842",
+                      "class": ""
+                    }
+                  },
+                  "slug": "person"
+                }
+              ],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-26835",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "name": "Team Member 2",
+                      "position": "Designer, ThemeXpert",
+                      "image": "https://s3.amazonaws.com/tx-quix/person.jpg",
+                      "description": "",
+                      "social": [
+                        "https://www.facebook.com/ThemeXpert",
+                        "https://www.twitter.com/themexpert"
+                      ]
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "animation": "fadeIn",
+                      "bg_color": "",
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "body_text_color": "",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "",
+                      "icon_hover_color": "",
+                      "icon_color": ""
+                    },
+                    "advanced": {
+                      "label": "Person",
+                      "id": "qx-person-26918",
+                      "class": ""
+                    }
+                  },
+                  "slug": "person"
+                }
+              ],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-55837",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "name": "Team Member 3",
+                      "position": "Developer, ThemeXpert",
+                      "image": "https://s3.amazonaws.com/tx-quix/person.jpg",
+                      "description": "",
+                      "social": [
+                        "https://www.facebook.com/ThemeXpert",
+                        "https://www.twitter.com/themexpert"
+                      ]
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "animation": "fadeIn",
+                      "bg_color": "",
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "body_text_color": "",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "",
+                      "icon_hover_color": "",
+                      "icon_color": ""
+                    },
+                    "advanced": {
+                      "label": "Person",
+                      "id": "qx-person-13921",
+                      "class": ""
+                    }
+                  },
+                  "slug": "person"
+                }
+              ],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-82839",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "name": "Team Member 4",
+                      "position": "Marketer, ThemeXpert",
+                      "image": "https://s3.amazonaws.com/tx-quix/person.jpg",
+                      "description": "",
+                      "social": [
+                        "https://www.facebook.com/ThemeXpert",
+                        "https://www.twitter.com/themexpert"
+                      ]
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "header_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "animation": "fadeIn",
+                      "bg_color": "",
+                      "body_font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "body_text_color": "",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "header_color": "",
+                      "icon_hover_color": "",
+                      "icon_color": ""
+                    },
+                    "advanced": {
+                      "label": "Person",
+                      "id": "qx-person-30924",
+                      "class": ""
+                    }
+                  },
+                  "slug": "person"
+                }
+              ],
+              "size": {
+                "lg": 0.25,
+                "md": 0.25,
+                "sm": 0.5,
+                "xs": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "visibility": {
+        "lg": true,
+        "md": true,
+        "sm": true,
+        "xs": true
+      },
+      "form": {
+        "general": {
+          "container": false,
+          "bg_image": "",
+          "image_repeat": "no-repeat",
+          "image_position": "initial",
+          "image_size": "initial",
+          "bg_color": "",
+          "bg_parallax": false,
+          "padding": {
+            "top": "10px",
+            "left": "",
+            "bottom": "40px",
+            "right": ""
+          }
+        },
+        "advanced": {
+          "label": "Footer",
+          "id": "qx-section-41869",
+          "class": ""
+        }
+      },
+      "slug": "section",
+      "children": [
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": false,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "initial",
+              "padding": {
+                "top": null,
+                "bottom": null
+              },
+              "bg_parallax": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-2982",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-14984",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "divider": true,
+                      "color": "#ddd",
+                      "divider_style": "solid",
+                      "divider_width": "1",
+                      "divider_center": true,
+                      "height": 30
+                    },
+                    "advanced": {
+                      "label": "Divider/Spacer",
+                      "id": "qx-divider-38987",
+                      "class": ""
+                    }
+                  },
+                  "slug": "divider"
+                }
+              ],
+              "size": {
+                "lg": 1,
+                "md": 1,
+                "sm": 0.5,
+                "xs": 1
+              }
+            }
+          ]
+        },
+        {
+          "visibility": {
+            "lg": true,
+            "md": true,
+            "sm": true,
+            "xs": true
+          },
+          "form": {
+            "general": {
+              "container": false,
+              "bg_image": "",
+              "equal_column": false,
+              "image_size": "initial",
+              "bg_color": "",
+              "image_position": "initial",
+              "padding": {
+                "top": null,
+                "bottom": null
+              },
+              "bg_parallax": false,
+              "image_repeat": "no-repeat"
+            },
+            "advanced": {
+              "label": "Row",
+              "id": "qx-row-37870",
+              "class": ""
+            }
+          },
+          "slug": "row",
+          "children": [
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-50912",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<h3>About Us</h3>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "22px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Heading",
+                      "id": "qx-text-32919",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "#999",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-191177",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                }
+              ],
+              "size": {
+                "lg": 0.3333333333333333,
+                "md": 0.3333333333333333,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-66914",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<h3>Contact Us</h3>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "22px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Heading",
+                      "id": "qx-text-221142",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<p>1818 N Vermont Ave<br /> Los Angeles, CA, United States</p>\n<p>(555) 774 433<br /> hello@en-co.com</p>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "#999",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-701071",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                }
+              ],
+              "size": {
+                "lg": 0.3333333333333333,
+                "md": 0.3333333333333333,
+                "sm": 0.5,
+                "xs": 1
+              }
+            },
+            {
+              "visibility": {
+                "lg": true,
+                "md": true,
+                "sm": true,
+                "xs": true
+              },
+              "form": {
+                "general": {
+                  "bg_image": "",
+                  "image_repeat": "no-repeat",
+                  "image_position": "initial",
+                  "image_size": "initial",
+                  "bg_color": "",
+                  "padding": {
+                    "top": "",
+                    "left": "",
+                    "bottom": "",
+                    "right": ""
+                  }
+                },
+                "advanced": {
+                  "label": "Column",
+                  "id": "qx-column-87916",
+                  "class": ""
+                }
+              },
+              "slug": "column",
+              "children": [
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<h3>Our Office Hours</h3>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "22px",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Heading",
+                      "id": "qx-text-921286",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                },
+                {
+                  "visibility": {
+                    "lg": true,
+                    "md": true,
+                    "sm": true,
+                    "xs": true
+                  },
+                  "form": {
+                    "general": {
+                      "alignment": "left",
+                      "content": "<p>Mo-Fr: 8:00-19:00<br /> Sa: 8:00-14:00<br /> So: closed</p>",
+                      "animation": "fadeIn"
+                    },
+                    "styles": {
+                      "bg_image": "",
+                      "image_size": "initial",
+                      "bg_color": "",
+                      "image_position": "initial",
+                      "margin": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "font": {
+                        "size": "",
+                        "bold": "",
+                        "underline": "",
+                        "italic": "",
+                        "family": "",
+                        "case": "",
+                        "spacing": "",
+                        "height": ""
+                      },
+                      "padding": {
+                        "top": "",
+                        "left": "",
+                        "bottom": "",
+                        "right": ""
+                      },
+                      "text_color": "#999",
+                      "image_repeat": "no-repeat"
+                    },
+                    "advanced": {
+                      "label": "Text",
+                      "id": "qx-text-561289",
+                      "class": ""
+                    }
+                  },
+                  "slug": "text"
+                }
+              ],
+              "size": {
+                "lg": 0.3333333333333333,
+                "md": 0.3333333333333333,
+                "sm": 0.5,
+                "xs": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

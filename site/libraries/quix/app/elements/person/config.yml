@@ -1,0 +1,97 @@
+name: Person
+slug: person
+groups: content
+form:
+  general:
+
+    - name: name
+      type: text
+      help: Input the name of the person
+      value: Team Member 1
+
+    - name: position
+      type: text
+      help: Input the person's position.
+      value: Company Role
+
+    - name: image
+      type: image
+      help: Upload your desired image, or type in the URL to the image you would like to display.
+
+    - name: description
+      type: editor
+      value: Aenean consectetur ipsum ante, vel egestas enim tincidunt quis. Pellentesque vitae congue neque, vel mattis ante. In vitae tempus nunc.
+
+    - name: social
+      type: input-repeater
+      label: Social Links
+      help: 
+      schema:
+        name: link
+        type: text
+      value: ['https://www.facebook.com/ThemeXpert','https://www.twitter.com/themexpert']
+
+  styles:
+    - name: alignment
+      type: select
+      value: left
+      label: Text Alignment
+      options:
+        left: Left
+        right: Right
+        center: Center
+        
+    - name: animation
+      type: select
+      value: fadeIn
+      label: Animation
+      options:
+        fadeInLeft: Left To Right
+        fadeInRight: Right To Left
+        fadeInUp: Bottom To Top
+        fadeInDown: Top To Bottom
+        fadeIn: Fade In
+        zoomIn: Zoom In
+        0: No Animation
+
+    - name: icon_color
+      type: color 
+      label: Icon Color 
+
+    - name: icon_hover_color
+      type: color 
+      label: Icon Hover Color 
+
+    - name: header_font
+      type: typography
+      lable: Header Font
+
+    - name: header_color
+      type: color 
+      label: Header Text Color
+
+    - name: position_color
+      type: color 
+      label: Position Text Color
+
+    - name: body_font
+      type: typography
+      lable: Description Font
+
+    - name: body_text_color
+      type: color 
+      label: Description Text Color
+
+    - name: bg_color
+      type: color 
+      labe: Background Color 
+
+    - name: bg_image
+      type: image 
+      label: Background Image
+
+    - name: margin
+      type: margin
+
+    - name: padding
+      type: padding

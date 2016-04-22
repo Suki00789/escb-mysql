@@ -1,0 +1,48 @@
+name: Slider
+slug: slider
+groups: interactive
+form:
+  general:
+    - name: sliders 
+      type: group-repeater
+      schema:
+        - name: title
+          value: Slide Title
+
+        - name: button_enabled
+          type : switch 
+          label: Enabled Button 
+
+        - name: button 
+          type: link
+          depends:
+            button_enabled: true
+
+        - name: image
+          type: image
+          label: Background Image 
+        
+        - name: content
+          type: editor
+      value:
+        - title: Slide Title
+    
+    - name: alignment
+      type: select
+      value: center
+      options:
+        left: Left
+        right: Right
+        center: Center
+  styles:
+    - name: header_font
+      type: typography
+      label: Header Font 
+    
+    - name: body_font
+      type: typography
+      label: Body Font 
+    
+    - name: body_color
+      type: color
+      value: #222
