@@ -39,7 +39,7 @@ if($_GET['logout']==true){
   if($_SESSION['logedin']){
     echo "Welcome " . $_SESSION['user']['name'];
   }else{
-    echo "Welcome guest";
+    echo "Welcome to Stamford University Bangladesh";
   }
 ?></h1>
 

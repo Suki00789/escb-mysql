@@ -5,16 +5,14 @@ if(isset($_POST)){
 
   $userid = $_POST['userid'];
   $name = $_POST['name'];
-  $dob = $_POST['dob'];
-  $profession = $_POST['pro'];
-  $gender = $_POST['gndr'];
-  $introduction = $_POST['intro'];
-  $fb = $_POST['fb'];
-  $twt = $_POST['twiit'];
+  $reg_cmplt = $_POST['reg_cmplt'];
+  $paid_reg = $_POST['paid_reg'];
+  $rcpt = $_POST['rcpt'];
+  $reg_sub = $_POST['reg_sub'];
 
 
   if(!empty($name)){
-    $sql = "INSERT INTO `profile`(`userid`, `name`,`dob`,`pro`,`gndr`,`intro`,`fb`,`twiit`) VALUES ('".$userid."','".$name."', '".$dob."', '".$profession."', '".$gender."', '".$introduction."', '".$fb."', '".$twt."')";
+    $sql = "INSERT INTO `profile`(`userid`, `name`,`reg_cmplt`,`paid_reg`,`rcpt`,`reg_sub`) VALUES ('".$userid."','".$name."', '".$reg_cmplt."', '".$paid_reg."', '".$rcpt."', '".$reg_sub."')";
 //echo $sql;die();
     if($conn->query($sql)===TRUE){
       $msg= "successfully received";
@@ -47,13 +45,13 @@ if(isset($_POST)){
   </head>
   <body>
     
-  <div class="container">
-    
 
     <?php $basefile = basename(__FILE__,'.php'); ?>
     <?php include_once 'header.php'; ?>
 
-    <h1>Profile</h1>
+    <div class="container">
+
+    <h1>Student's Must Fill It Before Exam</h1>
 
     <?php if (!empty($msg)) { ?>
 
@@ -73,35 +71,25 @@ if(isset($_POST)){
           <input type="text" class="form-control" id="name" name="name" required="true" />
         </div>
         <div class="form-group">
-          <label for="dob">Date of birth:</label>
-          <input type="text" class="form-control" id="date of birth" name="dob" required="true" />
+          <label for="reg_cmplt">Registration Complete ?</label><br>
+          <input type="text" class="form-control" id="name" name="reg_cmplt" required="true" />
         </div>
         <div class="form-group">
-          <label for="pro">Profession:</label>
-          <input type="text" class="form-control" id="pro" name="pro" required="true" />
+          <label for="paid_reg">Paid Registration Fee ?</label><br>
+          <input type="text" class="form-control" id="name" name="paid_reg" required="true" />
         </div>
         <div class="form-group">
-          <label for="gndr">Gender:</label>
-          <input type="text" class="form-control" id="gndr" name="gndr" required="true" />
+          <label for="rcpt">Receipt No. :</label><br>
+          <input type="text" class="form-control" id="name" name="rcpt" />
         </div>
         <div class="form-group">
-          <label for="intro">Introduction:</label>
-          <textarea class="form-control" id="intro" name="intro" required="true"></textarea>
+          <label for="reg_sub">Registered Subject:</label><br>
+          Subject -------------------------- Batch<br>
+          <input type="checkbox" name="opinion1" value="PL1"> PL 1 ---------------------- <input type="radio" name="opinion1" value="btch" checked> 52 <input type="radio" name="opinion1" value="btch" checked> 56<br>
+          <input type="checkbox" name="opinion2" value="Java"> Java --------------------- <input type="radio" name="opinion2" value="btch" checked> 53 <input type="radio" name="opinion2" value="yes" checked> 54
         </div>
-        <div class="form-group">
-          <label for="fb">Facebook:</label>
-          <input type="text" class="form-control" id="fb" name="fb" required="true" />
-        </div>
-        <div class="form-group">
-          <label for="twitt">Twitter:</label>
-          <input type="text" class="form-control" id="twitt" name="twiit" required="true" />
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox">Remember Me</label>
-          
-        </div>
-
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-default">Submit</button><br><br>
+        Fill It ? <a href ="#">Seat Plan Here</a><br><br>
       </form>
 
   </div><!-- /.container -->

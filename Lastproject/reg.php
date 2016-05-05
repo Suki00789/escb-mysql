@@ -3,14 +3,18 @@ $msg = '';
 if(isset($_POST)){
   include "conn.php"; 
 
-  $userid = $_POST['userid'];
+  $emp_stu = $_POST['emp_stu'];
   $name = $_POST['name'];
+  $userid = $_POST['userid'];
+  $join_btch = $_POST['join_btch'];
+  $dept = $_POST['dept'];
   $mail = $_POST['email'];
   $pass = $_POST['pass'];
 
 
   if(!empty($name)){
-    $sql = "INSERT INTO `registration`(`userid`,`name`,`email`,`pass`) VALUES ( '".$userid."', '".$name."', '".$mail."', '".md5($pass)."')";
+    $sql = "INSERT INTO `registration`(`emp_stu`,`name`,`userid`,`join_btch`,`dept`,`email`,`pass`) VALUES ( '".$emp_stu."','".$name."','".$userid."', '".$join_btch."','".$dept."', '".$mail."', '".md5($pass)."')";
+    //echo $sql;die();
 
     if($conn->query($sql)===TRUE){
       $msg= "successfully received";
@@ -73,17 +77,50 @@ if(isset($_POST)){
 
 
     <form role="form" method="post" style="width: 500px;">
+
         <div class="form-group">
-          <label for="userid">User Id:</label>
-          <input type="text" class="form-control" id="name" name="userid" required="true" />
+          <label for="emp_stu">Employee/ Student:</label>
+          <select class="form-control" name="emp_stu">
+                  <option value="Employee">Employee</option>
+                  <option value="Student">Student</option>
+          </select>
         </div>
         <div class="form-group">
-          <label for="name">Name:</label>
+          <label for="name">Username:</label>
           <input type="text" class="form-control" id="name" name="name" required="true" />
         </div>
         <div class="form-group">
-          <label for="password">E-mail:</label>
-          <input type="text" class="form-control" id="pass" name="email" required="true" />
+          <label for="userid">User Id:</label>
+          <input type="text" class="form-control" id="userid" name="userid" required="true" />
+        </div>
+        <div class="form-group">
+          <label for="join_btch">Joining Date/ Batch:</label>
+          <input type="text" class="form-control" id="join_btch" name="join_btch" required="true" />
+        </div>
+        <div class="form-group">
+          <label for="dept">Department:</label>
+          <select class="form-control" name="dept">
+                    <option value="Attendant">Attendent</option>
+                    <option value="ARC">Department of Architecture</option>
+                    <option value="BBA">Department of Business Administration</option>
+                    <option value="CEN">Department of Civil Engineering</option>
+                    <option value="Computer Science">Department of Computer Science &amp; Engineering</option>
+                    <option value="ECO">Department of Economics</option>
+                    <option value="EEE">Department of Electrical &amp; Electronic Engineering</option>
+                    <option value="English">Department of English</option>
+                    <option value="ENV">Department of Environmental Science</option>
+                    <option value="FLM">Department of Film and Media Studies</option>
+                    <option value="JLC">Japanese Language Center</option>
+                    <option value="JRN">Department of Journalism &amp; Media Studies</option>
+                    <option value="LAW">Department of Law</option>
+                    <option value="MBO">Department of Microbiology</option>
+                    <option value="Natural Science">Department of Natural Science</option>
+                    <option value="Pharmacy">Department of Pharmacy</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="text" class="form-control" id="email" name="email" required="true" />
         </div>
         <div class="form-group">
           <label for="password">Password:</label>
